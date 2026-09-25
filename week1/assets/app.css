@@ -297,23 +297,11 @@
   .selection\:bg-hover-color::selection {
     background-color: var(--color-hover-color);
   }
-  .selection\:bg-ink-deep ::selection {
-    background-color: var(--color-ink-deep);
-  }
-  .selection\:bg-ink-deep::selection {
-    background-color: var(--color-ink-deep);
-  }
   .selection\:text-ink ::selection {
     color: var(--color-ink);
   }
   .selection\:text-ink::selection {
     color: var(--color-ink);
-  }
-  .selection\:text-on-dark ::selection {
-    color: var(--color-on-dark);
-  }
-  .selection\:text-on-dark::selection {
-    color: var(--color-on-dark);
   }
 }
 :root {
