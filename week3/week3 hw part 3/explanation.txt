@@ -1,0 +1,9 @@
+For this task i recreated a flex layout from spotify: https://open.spotify.com/
+
+i recreated an artist carousel that uses a flexbox layout
+
+the flexbox on the carousel has them horizontally aligned and thats what i recreated with my own version
+
+so in mine i made a main div and gave it a flex and a gap of 8 this spaces it all evenly and the items-center aligns everything along the horizontal axis
+
+for the images i made a div and made them the same with and height and gave it rounded corners and then put an image in the div wich filled it

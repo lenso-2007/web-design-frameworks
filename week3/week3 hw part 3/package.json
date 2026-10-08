@@ -1,0 +1,8 @@
+{
+  "name": "03-week3-hw-part3",
+  "private": true,
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
