@@ -211,14 +211,14 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .inline-block {
     display: inline-block;
   }
   .inline-flex {
     display: inline-flex;
-  }
-  .table {
-    display: table;
   }
   .h-9 {
     height: calc(var(--spacing) * 9);
@@ -247,20 +247,8 @@
   .min-w-0 {
     min-width: 0px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .grid-cols-\[1\.1fr_0\.9fr\] {
-    grid-template-columns: 1.1fr 0.9fr;
   }
   .grid-cols-\[minmax\(5rem\,12\%\)_1fr\] {
     grid-template-columns: minmax(5rem,12%) 1fr;
@@ -292,10 +280,6 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-\(length\:--rule\) {
     border-style: var(--tw-border-style);
     border-width: var(--rule);
@@ -311,10 +295,6 @@
   .border-b-\(length\:--rule\) {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: var(--rule);
-  }
-  .border-l-\(length\:--rule\) {
-    border-left-style: var(--tw-border-style);
-    border-left-width: var(--rule);
   }
   .border-ink {
     border-color: var(--color-ink);
@@ -351,9 +331,6 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -441,9 +418,6 @@
   .text-pretty {
     text-wrap: pretty;
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .break-words {
     overflow-wrap: break-word;
   }
@@ -471,10 +445,6 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   @media (width >= 40rem) {
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -492,6 +462,11 @@
     .sm\:border-l-\(length\:--rule\) {
       border-left-style: var(--tw-border-style);
       border-left-width: var(--rule);
+    }
+    @media (width < 64rem) {
+      .sm\:max-lg\:block {
+        display: block;
+      }
     }
   }
   @media (width >= 64rem) {
@@ -520,11 +495,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -532,7 +502,6 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
     }
   }
 }
