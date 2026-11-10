@@ -2,3 +2,18 @@
 
 /* Your site's design tokens go in an @theme block here, from your own Figma
    variables. That is week 7. Until then this file only imports Tailwind. */
+
+@theme {
+   --color-moss: #005E55;
+   --color-forest: #547A65;
+   --color-pea: #B9D6C4;
+   --color-mint: #E8F1EB;
+   --color-grey: #F2F3F5;
+   --color-white: #FFFFFF;
+   --color-black: #000000;
+   --font-display: "Lato", sans-serif;
+   --text-display: 5rem; 
+   --text-h2: 3rem; 
+   --text-h3: 2.25rem;
+   --text-body: 1.25rem; 
+}
