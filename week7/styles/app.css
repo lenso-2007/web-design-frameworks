@@ -19,6 +19,7 @@
    "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
    --text-display: clamp(2.5rem, 1.6rem + 4vw, 5rem);
    --text-h2: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+   --breakpoint-xs: 30rem;
 }
 
 :root {
